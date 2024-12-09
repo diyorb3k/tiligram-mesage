@@ -1,11 +1,14 @@
-import About from "@/components/About/page"
-import Hom from "@/components/Hom/page"
+"use client";
+import Header from "@/components/header/page";
+import Link from "next/link";
 
-const page = () => {
+const Hom = () => {
   return (
-    <div className="container mx-auto">
-      <Hom/>
+    <div className="container mx-auto flex justify-between items-center py-4">
+      <h1 className="text-xl font-bold">Logo</h1>
+      <Header/>
     </div>
-  )
-}
-export default page
+  );
+};
+
+export default Hom;
