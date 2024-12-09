@@ -1,12 +1,13 @@
 'use client'
 
 import axios from "axios"
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 const Hom = () => {
   const [data,setData]=useState([])
   useEffect(()=>{
-    axios.get('https://jsonplaceholder.typicode.com/posts')
+    axios.get('https://jsonplaceholder.typicode.com/photos')
     .then((response)=>{
       setData(response.data)
     })
@@ -19,6 +20,12 @@ console.log('xatolik',error)
     {
       data.map((davlat) => (
         <div key={davlat.id}>
+ <Image 
+        src={davlat.url}
+        alt="Tashqi manba rasm"
+        width={600}
+        height={400}
+      />      
           <h2>{davlat.title}</h2>
           <p>{davlat.body}</p>
         </div>
