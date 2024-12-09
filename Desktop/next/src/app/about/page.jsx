@@ -1,6 +1,10 @@
+import Header from "@/components/header/page"
+
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 export default About
