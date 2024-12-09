@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 bg-white shadow-lg z-50">
-      <div className="container mx-auto px-20 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-10 py-4 flex justify-between items-center">
         {/* Logo yoki sayt nomi */}
         <div className="text-xl font-bold">
           <Link href="/" className="text-gray-800 hover:text-blue-500">
@@ -55,7 +55,7 @@ const Header = () => {
       {/* Mobile menu (open/close) */}
       <div
         className={`md:hidden fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-300 ease-in-out`}
       >
         <ul className="space-y-4 px-5 py-4">
