@@ -15,7 +15,7 @@ console.log('xatolik',error)
     })
   })
   return (
-    <div>
+    <div className="container mx-auto px-5 py-10" >
     {
       data.map((davlat) => (
         <div key={davlat.id}>
