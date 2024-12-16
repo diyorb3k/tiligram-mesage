@@ -55,7 +55,7 @@ const Header = () => {
       {/* Mobile menu (open/close) */}
       <div
         className={`md:hidden fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg transform ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         <ul className="space-y-4 px-5 py-4">
